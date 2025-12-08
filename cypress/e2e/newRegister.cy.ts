@@ -31,7 +31,7 @@ describe('New User', () => {
     loginPage.clickMinhaConta()
     newRegisterPage.fillEmail(email)
     newRegisterPage.clickCadastrar()
-    newRegisterPage.fillConfirmEmail(email)
+    newRegisterPage.fillConfirmEmail()
     newRegisterPage.fillPassword(password)
     newRegisterPage.fillConfirmPassword(password)
     newRegisterPage.fillNomeCompleto(nomeCompleto)
