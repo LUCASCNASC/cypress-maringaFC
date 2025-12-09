@@ -11,17 +11,28 @@ describe('Orders', () => {
   beforeEach(() => {
     cy.visit('/');
     cy.closeInitialMessage();
-    cy.login();
+    //cy.login();
   });
 
-  it.skip('with one product - size P', () => {
+  it('with one product - size M', () => {
 
-    newOrderPage.clickCarrinhoVazio()
+    cy.createNewUser()
     menusPage.clickMasculino()
     newOrderPage.clickFisrtProduct()
-    clothingSizesPage.chooseP()
-    //newOrderPage.validateEstoqueDisponivel()
+    clothingSizesPage.chooseM()
     newOrderPage.clickComprar()
+    newOrderPage.clickFinalizarCompra()
+
+  });
+
+  it.only('with two product - size M', () => {
+
+    cy.createNewUser()
+    menusPage.clickMasculino()
+    newOrderPage.clickFisrtProduct()
+    clothingSizesPage.chooseM()
+    newOrderPage.clickSecondProduct()
+    clothingSizesPage.chooseM()
 
   });
 

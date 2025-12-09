@@ -13,20 +13,27 @@ export class NewOrderPage {
         cy.get(':nth-child(1) > .row-fluid > :nth-child(1) > .listagem-item > .produto-sobrepor').click()
     }
 
+    clickSecondProduct() {
+        cy.get(':nth-child(2) > :nth-child(1) > ul > :nth-child(2) > .listagem-item > .produto-sobrepor').click()
+    }
+
     clickComprar() {
-        cy.get('div.principal > .SKU-MT2025-2 > .comprar > .botao').click()
+        cy.get('div.principal > .SKU-MB2025-3 > .comprar > .botao').click()
     }
 
     validateEstoqueDisponivel() {
-        cy.get('div.principal > .SKU-MV2025-2 > .comprar > .cor-secundaria > .cor-principal')
+        cy.contains("Estoque: Disponível")
             .should("be.visible")
-            .and("contain", "Disponível")
     }
 
     validateEstoqueIndisponivel() {
         cy.get('div.principal > .SKU-MV2025-2 > .comprar > .cor-secundaria > .cor-principal')
             .should("be.visible")
             .and("contain", "Indisponível")   
+    }
+
+    clickFinalizarCompra() {
+        cy.get('.span12 > .principal').click()
     }
 
     

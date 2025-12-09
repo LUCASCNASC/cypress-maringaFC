@@ -3,5 +3,6 @@ declare namespace Cypress {
     login(): Chainable<void>;
     closeInitialMessage(): Chainable<void>;
     newUser(): Chainable<void>;
+    createNewUser(): Chainable<void>;
   }
 }
