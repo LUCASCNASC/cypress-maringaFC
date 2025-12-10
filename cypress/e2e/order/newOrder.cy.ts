@@ -1,6 +1,6 @@
 import { NewOrderPage } from '../../pages/order/NewOrderPage';
 import { ClothingSizesPage } from '../../pages/order/ClothingSizesPage';
-import { MenusPage } from '../../pages/MenusPage';
+import { MenusPage } from '../../pages/menus/MenusPage';
 
 describe('Orders', () => {
 

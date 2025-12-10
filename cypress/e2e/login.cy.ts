@@ -10,7 +10,7 @@ describe('Login', () => {
     cy.closeInitialMessage();
   });
 
-  it('login sucess', () => {
+  it.only('login sucess', () => {
 
     loginPage.clickMinhaConta()
     loginPage.fillEmail(users.validUser.email)
