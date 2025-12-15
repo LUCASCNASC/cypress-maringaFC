@@ -11,7 +11,7 @@ describe('Login', () => {
   });
 
   it.only('login sucess', () => {
-
+    
     loginPage.clickMinhaConta()
     loginPage.fillEmail(users.validUser.email)
     loginPage.fillPassword(users.validUser.password)
@@ -45,6 +45,4 @@ describe('Login', () => {
     loginPage.clickProsseguir()
     loginPage.validatePasswordStrong()
   });
-
-
 });

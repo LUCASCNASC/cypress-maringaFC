@@ -11,9 +11,9 @@ describe('Orders', () => {
   beforeEach(() => {
     cy.visit('/');
     cy.closeInitialMessage();
-    //cy.login();
   });
 
+  //até colocar os dados de pagamento, falta o pagamento
   it('with one product - size M', () => {
 
     cy.createNewUser()
@@ -22,7 +22,6 @@ describe('Orders', () => {
     clothingSizesPage.chooseM()
     newOrderPage.clickComprar()
     newOrderPage.clickFinalizarCompra()
-
   });
 
   it.only('with two product - size M', () => {
@@ -35,5 +34,4 @@ describe('Orders', () => {
     clothingSizesPage.chooseM()
 
   });
-
 });

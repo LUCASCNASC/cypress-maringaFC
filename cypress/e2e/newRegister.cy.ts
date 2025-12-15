@@ -16,7 +16,6 @@ describe('New User', () => {
   const telefoneFixo = faker.helpers.replaceSymbols('(44) 3###-####');
   const data = faker.date.birthdate({ min: 18, max: 60, mode: 'age' });
   const dataNascimento = data.toLocaleDateString('pt-BR');
-  //const numeroResidencia = faker.number.int({ min: 1, max: 999 });
   const cpf = generateCPF();
   const CEP = generateCEP();
   
@@ -41,11 +40,8 @@ describe('New User', () => {
     newRegisterPage.selectSexoMasculino()
     newRegisterPage.fillDataNascimento(dataNascimento)
     newRegisterPage.fillCEP(CEP)
-    //newRegisterPage.fillNumeroResidencia(numeroResidencia)
     newRegisterPage.fillComplemento()
     newRegisterPage.fillReferencia()
     newRegisterPage.clickCriarConta()
   });
-
-
 });
