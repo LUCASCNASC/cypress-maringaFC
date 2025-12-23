@@ -5,7 +5,6 @@ dotenv.config();
 
 export default defineConfig({
   projectId: "hnqg5e",
-
   e2e: {
     baseUrl: process.env.BASE_URL,
     defaultCommandTimeout: 20000,
@@ -25,7 +24,6 @@ export default defineConfig({
       console.log("🌱 Ambiente carregado:");
       console.log("BASE_URL:", config.env.BASE_URL ?? process.env.BASE_URL);
 
-      // Retornar o config é importante
       return config;
     },
   },
@@ -33,10 +31,8 @@ export default defineConfig({
   // Dimensões do browser
   viewportWidth: 1440,
   viewportHeight: 900,
-
   video: false,
   videoCompression: 32,
-
   screenshotOnRunFailure: true,
   fixturesFolder: "cypress/fixtures",
 });
