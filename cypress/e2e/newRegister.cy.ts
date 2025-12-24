@@ -26,7 +26,6 @@ describe('New User', () => {
   });
 
   it('Create new user - pessoa física', () => {
-
     loginPage.clickMinhaConta()
     newRegisterPage.fillEmail(email)
     newRegisterPage.clickCadastrar()
