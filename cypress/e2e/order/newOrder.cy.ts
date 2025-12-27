@@ -4,9 +4,9 @@ import { MenusPage } from '../../pages/menus/MenusPage';
 
 describe('Orders', () => {
 
-  const newOrderPage = new NewOrderPage(); // ✅ cria instância
-  const clothingSizesPage = new ClothingSizesPage(); // ✅ cria instância
-  const menusPage = new MenusPage(); // ✅ cria instância
+  const newOrderPage = new NewOrderPage();
+  const clothingSizesPage = new ClothingSizesPage();
+  const menusPage = new MenusPage();
 
   beforeEach(() => {
     cy.visit('/');

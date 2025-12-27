@@ -3,7 +3,7 @@ import users from '../support/users.json';
 
 describe('Login', () => {
 
-  const loginPage = new LoginPage(); // ✅ cria instância
+  const loginPage = new LoginPage();
 
   beforeEach(() => {
     cy.visit('/');

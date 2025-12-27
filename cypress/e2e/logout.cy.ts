@@ -2,7 +2,7 @@ import { LogoutPage } from '../pages/LogoutPage';
 
 describe('Logout', () => {
 
-  const logoutPage = new LogoutPage(); // ✅ cria instância
+  const logoutPage = new LogoutPage();
 
   beforeEach(() => {
     cy.visit('/');

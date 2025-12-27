@@ -6,8 +6,8 @@ import { NewRegisterPage } from '../pages/NewRegisterPage';
 
 describe('New User', () => {
 
-  const loginPage = new LoginPage(); // ✅ cria instância
-  const newRegisterPage = new NewRegisterPage(); // ✅ cria instância
+  const loginPage = new LoginPage();
+  const newRegisterPage = new NewRegisterPage();
 
   const email = faker.internet.email();
   const password = faker.internet.password();
@@ -18,7 +18,6 @@ describe('New User', () => {
   const dataNascimento = data.toLocaleDateString('pt-BR');
   const cpf = generateCPF();
   const CEP = generateCEP();
-  
 
   beforeEach(() => {
     cy.visit('/');
