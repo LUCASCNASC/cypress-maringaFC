@@ -2,7 +2,7 @@ export class LoginPage {
 
     //clicar no botão Minha Conta
     clickMinhaConta() {
-        cy.get('.acoes-conta > :nth-child(2) > .cor-secundaria').click()
+        cy.get('.acoes-conta > :nth-child(2) > .cor-secundaria').click();
     }
 
     //preencher campo Email
@@ -17,7 +17,7 @@ export class LoginPage {
 
     //clicar no botão Prosseguir
     clickProsseguir() {
-        cy.get('.controls > .botao').click()
+        cy.get('.controls > .botao').click();
     }
 
     //vlidar login com sucesso

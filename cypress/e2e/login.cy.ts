@@ -12,37 +12,37 @@ describe('Login', () => {
 
   it.only('login sucess', () => {
 
-    loginPage.clickMinhaConta()
-    loginPage.fillEmail(users.validUser.email)
-    loginPage.fillPassword(users.validUser.password)
-    loginPage.clickProsseguir()
-    loginPage.validateLoginSuccess()
+    loginPage.clickMinhaConta();
+    loginPage.fillEmail(users.validUser.email);
+    loginPage.fillPassword(users.validUser.password);
+    loginPage.clickProsseguir();
+    loginPage.validateLoginSuccess();
   });
 
   it('login email strong', () => {
 
-    loginPage.clickMinhaConta()
-    loginPage.fillEmail(users.invalidUser.email)
-    loginPage.fillPassword(users.validUser.password)
-    loginPage.clickProsseguir()
-    loginPage.validateEmailStrong()
+    loginPage.clickMinhaConta();
+    loginPage.fillEmail(users.invalidUser.email);
+    loginPage.fillPassword(users.validUser.password);
+    loginPage.clickProsseguir();
+    loginPage.validateEmailStrong();
   });
 
   it('login password strong', () => {
 
-    loginPage.clickMinhaConta()
-    loginPage.fillEmail(users.validUser.email)
-    loginPage.fillPassword(users.invalidUser.password)
-    loginPage.clickProsseguir()
-    loginPage.validatePasswordStrong()
+    loginPage.clickMinhaConta();
+    loginPage.fillEmail(users.validUser.email);
+    loginPage.fillPassword(users.invalidUser.password);
+    loginPage.clickProsseguir();
+    loginPage.validatePasswordStrong();
   });
 
   it('login email and password strong', () => {
     
     loginPage.clickMinhaConta()
-    loginPage.fillEmail(users.invalidUser.email)
-    loginPage.fillPassword(users.invalidUser.password)
-    loginPage.clickProsseguir()
-    loginPage.validatePasswordStrong()
+    loginPage.fillEmail(users.invalidUser.email);
+    loginPage.fillPassword(users.invalidUser.password);
+    loginPage.clickProsseguir();
+    loginPage.validatePasswordStrong();
   });
 });

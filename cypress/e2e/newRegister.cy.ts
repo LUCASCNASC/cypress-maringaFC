@@ -26,21 +26,21 @@ describe('New User', () => {
 
   it('Create new user - pessoa física', () => {
     
-    loginPage.clickMinhaConta()
-    newRegisterPage.fillEmail(email)
-    newRegisterPage.clickCadastrar()
-    newRegisterPage.fillConfirmEmail()
-    newRegisterPage.fillPassword(password)
-    newRegisterPage.fillConfirmPassword(password)
-    newRegisterPage.fillNomeCompleto(nomeCompleto)
-    newRegisterPage.fillCPF(cpf)
-    newRegisterPage.fillCelular(celular)
-    newRegisterPage.fillTelefoneFixo(telefoneFixo)
-    newRegisterPage.selectSexoMasculino()
-    newRegisterPage.fillDataNascimento(dataNascimento)
-    newRegisterPage.fillCEP(CEP)
-    newRegisterPage.fillComplemento()
-    newRegisterPage.fillReferencia()
-    newRegisterPage.clickCriarConta()
+    loginPage.clickMinhaConta();
+    newRegisterPage.fillEmail(email);
+    newRegisterPage.clickCadastrar();
+    newRegisterPage.fillConfirmEmail();
+    newRegisterPage.fillPassword(password);
+    newRegisterPage.fillConfirmPassword(password);
+    newRegisterPage.fillNomeCompleto(nomeCompleto);
+    newRegisterPage.fillCPF(cpf);
+    newRegisterPage.fillCelular(celular);
+    newRegisterPage.fillTelefoneFixo(telefoneFixo);
+    newRegisterPage.selectSexoMasculino();
+    newRegisterPage.fillDataNascimento(dataNascimento);
+    newRegisterPage.fillCEP(CEP);
+    newRegisterPage.fillComplemento();
+    newRegisterPage.fillReferencia();
+    newRegisterPage.clickCriarConta();
   });
 });

@@ -5,12 +5,12 @@ export class NewRegisterPage {
 
     //clicar no botão Cadastrar
     clickCadastrar() {
-        cy.get('fieldset > div > .botao').click()
+        cy.get('fieldset > div > .botao').click();
     }
 
     //clicar no botão Criar Conta
     clickCriarConta() {
-        cy.get('.span3 > .principal').click()
+        cy.get('.span3 > .principal').click();
         cy.get('.alert').should('be.visible')
         cy.contains('Cliente criado com sucesso.').should('be.visible')
     }
