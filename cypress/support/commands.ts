@@ -25,7 +25,7 @@ Cypress.Commands.add("closeInitialMessage", () => {
   cy.get('.fancybox-skin', { timeout: 13000 }) // espera até 10s aparecer
       .should('be.visible')                      // garante que está visível
       .within(() => {
-        cy.get('.fancybox-close').click();;       // clica no botão de fechar
+        cy.get('.fancybox-close').click();       // clica no botão de fechar
       });
 });
 
@@ -82,7 +82,7 @@ Cypress.Commands.add("createNewUser", () => {
   cy.get('[name="complemento"]').type('Complemento Teste');
   cy.get('[name="referencia"]').type('Referencia Teste');
 
-  cy.get('.span3 > .principal').click();;
+  cy.get('.span3 > .principal').click();
   cy.get('.alert').should('be.visible');
   cy.contains('Cliente criado com sucesso.').should('be.visible');
 });

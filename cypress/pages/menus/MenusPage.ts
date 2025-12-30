@@ -41,18 +41,18 @@ export class MenusPage {
             .and("be.visible");
         cy.get('.breadcrumbs > ul > :nth-child(2) > .cor-secundaria')
             .should("contain", "ACESSÓRIOS MFC")
-            .and("be.visible");;
+            .and("be.visible");
     }
 
     //clicar na opção infantil
     clickInfantil() {
-        cy.get('.conteiner > .menu > .nivel-um > .categoria-id-3977525 > [href="https://store.maringafc.com/linha-infantil"] > .titulo').click();;
+        cy.get('.conteiner > .menu > .nivel-um > .categoria-id-3977525 > [href="https://store.maringafc.com/linha-infantil"] > .titulo').click();
         cy.get('.breadcrumbs > ul > :nth-child(1) > a')
             .should("contain", "Página inicial")
-            .and("be.visible");;
+            .and("be.visible");
         cy.get('.breadcrumbs > ul > :nth-child(2) > .cor-secundaria')
             .should("contain", "INFANTIL")
-            .and("be.visible");;
+            .and("be.visible");
     }
 
     //clicar na opção pets
