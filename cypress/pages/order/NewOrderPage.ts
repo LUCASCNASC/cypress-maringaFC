@@ -43,6 +43,4 @@ export class NewOrderPage {
     clickFinalizarCompra() {
         cy.get('.span12 > .principal').click();
     }
-
-    
 }
