@@ -5,7 +5,6 @@ import { LoginPage } from '../pages/LoginPage';
 import { NewRegisterPage } from '../pages/NewRegisterPage';
 
 describe('New User', () => {
-
   const loginPage = new LoginPage();
   const newRegisterPage = new NewRegisterPage();
 

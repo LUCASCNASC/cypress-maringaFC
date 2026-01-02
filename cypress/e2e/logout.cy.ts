@@ -1,7 +1,6 @@
 import { LogoutPage } from '../pages/LogoutPage';
 
 describe('Logout', () => {
-
   const logoutPage = new LogoutPage();
 
   beforeEach(() => {
