@@ -7,10 +7,11 @@ describe('Login', () => {
   beforeEach(() => {
     cy.visit('/');
     cy.closeInitialMessage();
+    loginPage.clickMinhaConta();
   });
 
   it.only('login sucess', () => {
-    loginPage.clickMinhaConta();
+    
     loginPage.fillEmail(users.validUser.email);
     loginPage.fillPassword(users.validUser.password);
     loginPage.clickProsseguir();
@@ -18,7 +19,7 @@ describe('Login', () => {
   });
 
   it('login email strong', () => {
-    loginPage.clickMinhaConta();
+
     loginPage.fillEmail(users.invalidUser.email);
     loginPage.fillPassword(users.validUser.password);
     loginPage.clickProsseguir();
@@ -26,7 +27,7 @@ describe('Login', () => {
   });
 
   it('login password strong', () => {
-    loginPage.clickMinhaConta();
+    
     loginPage.fillEmail(users.validUser.email);
     loginPage.fillPassword(users.invalidUser.password);
     loginPage.clickProsseguir();
@@ -35,7 +36,6 @@ describe('Login', () => {
 
   it('login email and password strong', () => {
 
-    loginPage.clickMinhaConta()
     loginPage.fillEmail(users.invalidUser.email);
     loginPage.fillPassword(users.invalidUser.password);
     loginPage.clickProsseguir();
