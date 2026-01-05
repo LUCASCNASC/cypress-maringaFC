@@ -19,6 +19,7 @@ describe('New User', () => {
   const CEP = generateCEP();
 
   beforeEach(() => {
+    
     cy.visit('/');
     cy.closeInitialMessage();
   });
