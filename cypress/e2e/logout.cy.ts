@@ -11,6 +11,7 @@ describe('Logout', () => {
   });
 
   it('logout sucess', () => {
+    
     logoutPage.clickSair();
   });
 });

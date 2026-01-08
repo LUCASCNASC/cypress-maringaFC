@@ -12,6 +12,7 @@ describe('Login', () => {
   });
 
   it.only('login sucess', () => {
+    
     loginPage.fillEmail(users.validUser.email);
     loginPage.fillPassword(users.validUser.password);
     loginPage.clickProsseguir();
@@ -19,6 +20,7 @@ describe('Login', () => {
   });
 
   it('login email strong', () => {
+
     loginPage.fillEmail(users.invalidUser.email);
     loginPage.fillPassword(users.validUser.password);
     loginPage.clickProsseguir();
@@ -26,6 +28,7 @@ describe('Login', () => {
   });
 
   it('login password strong', () => {
+
     loginPage.fillEmail(users.validUser.email);
     loginPage.fillPassword(users.invalidUser.password);
     loginPage.clickProsseguir();
@@ -33,6 +36,7 @@ describe('Login', () => {
   });
 
   it('login email and password strong', () => {
+
     loginPage.fillEmail(users.invalidUser.email);
     loginPage.fillPassword(users.invalidUser.password);
     loginPage.clickProsseguir();
