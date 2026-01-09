@@ -1,6 +1,5 @@
 /// <reference types="cypress" />
 
-
 import users from '../support/users.json';
 
 Cypress.Commands.add("login", () => {
@@ -55,9 +54,7 @@ Cypress.Commands.add("createNewUser", () => {
   // ====== CADASTRO NA TELA ======
 
   cy.get('.acoes-conta > :nth-child(2) > .cor-secundaria').click();
-
   cy.get('.span8[name="email"]').type(email);
-
   cy.get('fieldset > div > .botao').click();
 
   cy.get('.controls > [name="email"]')

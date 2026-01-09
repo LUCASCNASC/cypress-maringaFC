@@ -3,7 +3,6 @@ import { ClothingSizesPage } from '../../pages/order/ClothingSizesPage';
 import { MenusPage } from '../../pages/menus/MenusPage';
 
 describe('Orders', () => {
-  
   const newOrderPage = new NewOrderPage();
   const clothingSizesPage = new ClothingSizesPage();
   const menusPage = new MenusPage();

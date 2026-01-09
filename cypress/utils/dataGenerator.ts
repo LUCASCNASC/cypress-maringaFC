@@ -15,9 +15,7 @@ export type CustomerData = {
     password: string;
 };
 
-/**
- * Gera um objeto com dados aleatórios de um novo cliente.
- */
+//Gera um objeto com dados aleatórios de um novo cliente.
 export function generateNewCustomerData(): CustomerData {
     const password = faker.internet.password({ length: 10, pattern: /[\w\d]/, prefix: '@Lcn' });
 

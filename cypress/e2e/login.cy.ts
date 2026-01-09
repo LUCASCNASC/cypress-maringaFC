@@ -5,7 +5,6 @@ describe('Login', () => {
   const loginPage = new LoginPage();
 
   beforeEach(() => {
-    
     cy.visit('/');
     cy.closeInitialMessage();
     loginPage.clickMinhaConta();
